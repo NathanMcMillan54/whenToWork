@@ -8,4 +8,6 @@ print("Current date: ", date)
 time.sleep(1)
 
 Nf = open("textFiles/userName.txt").read()
-print(Nf)
+COf = open("textFiles/companyName.txt").read()
+print(Nf, "working at", COf)
+
