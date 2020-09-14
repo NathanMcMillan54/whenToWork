@@ -25,11 +25,16 @@ while True:
         os.system('sh beep.sh')
         print("Stop")
         exit()
-    elif p1I < 4:
+    elif p1I < 3:
+        print("Work for 15 minutes")
+        time.sleep(900)
+        os.system('sh beep.sh')
+        print("Stop")
+        exit()
+    elif p1I == 4:
         print("Work for 30 minutes")
         time.sleep(1800)
         os.system('sh beep.sh')
-        print("Stop")
         exit()
     elif p1I == 5:
         print("Work for 45 minutes")
