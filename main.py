@@ -1,0 +1,1 @@
+print("When to work")
