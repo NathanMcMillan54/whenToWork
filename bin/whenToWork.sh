@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-python main.py
+echo "Starting..."
+xterm -hold -e "python whenToWork/main.py"

@@ -10,4 +10,7 @@ COf = open("textFiles/companyName.txt", "w")
 COf.read()
 COf.writelines(userName)
 
+print("Setting up shellscript stuff")
 os.system('sh bin/setup.sh')
+
+print("Done")
