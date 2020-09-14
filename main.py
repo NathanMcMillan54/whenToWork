@@ -15,7 +15,7 @@ print(Nf, "working at", COf)
 time.sleep(1)
 
 p1 = input("Input project: ")
-p1I = input("Input number between 1 and 10: ")
+p1I = int(input("Input number between 1 and 10: "))
 
 while True:
     print(p1)
