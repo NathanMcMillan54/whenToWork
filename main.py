@@ -15,10 +15,10 @@ print(Nf, "working at", COf)
 time.sleep(1)
 
 p1 = input("Input project: ")
-p1I = int(input("Input number between 1 and 10: "))
+print("Input number between 1 and 10")
+p1I = int(input("1 being not important 10 being very important "))
 
 while True:
-    print(p1)
     if p1I > 7:
         print("Work for 60 minutes")
         time.sleep(3600)
@@ -30,4 +30,14 @@ while True:
         time.sleep(1800)
         os.system('sh beep.sh')
         print("Stop")
+        exit()
+    elif p1I == 5:
+        print("Work for 45 minutes")
+        time.sleep(2700)
+        os.system('sh beep.sh')
+        exit()
+    elif p1I == 6:
+        print("Work for 45 minutes")
+        time.sleep(2700)
+        os.system('sh beep.sh')
         exit()
