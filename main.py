@@ -1,8 +1,11 @@
-import os
+import time
 
-print("When to work")
+t = time.localtime()
+# 'a' is for short name of week day, 'd' is for day of month, 'B' is for month name, 'Y' is for year number
+date = time.strftime("%a, %d, %B, %Y", t)
 
-p1 = 0
+print("Current date: ", date)
+time.sleep(1)
 
-if p1 == 1:
-    os.system('sh beep.sh')
+Nf = open("textFiles/userName.txt").read()
+print(Nf)
