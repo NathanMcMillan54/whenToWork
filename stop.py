@@ -11,6 +11,7 @@ L.pack()
 
 
 def closeWin():
+    print("Goodbye!")
     exit()
 
 
@@ -19,7 +20,7 @@ Btn.pack()
 
 
 def beep():
-    os.system('sh beep.sh')
+    os.system('sh whenToWork/beep.sh')
 
 
 beep()

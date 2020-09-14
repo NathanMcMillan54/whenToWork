@@ -8,8 +8,8 @@ date = time.strftime("%a, %d, %B, %Y", t)
 print("Current date: ", date)
 time.sleep(1)
 
-Nf = open("textFiles/userName.txt").read()
-COf = open("textFiles/companyName.txt").read()
+Nf = open("whenToWork/textFiles/userName.txt").read()
+COf = open("whenToWork/textFiles/companyName.txt").read()
 print(Nf, "working at", COf)
 
 time.sleep(1)
@@ -22,27 +22,27 @@ while True:
     if p1I > 7:
         print("Work for 60 minutes")
         time.sleep(3600)
-        os.system('python stop.py')
+        os.system('python whenToWork/stop.py')
         print("Stop")
         exit()
     elif p1I < 3:
         print("Work for 15 minutes")
         time.sleep(900)
-        os.system('python stop.py')
+        os.system('python whenToWork/stop.py')
         print("Stop")
         exit()
     elif p1I == 4:
         print("Work for 30 minutes")
         time.sleep(1800)
-        os.system('python stop.py')
+        os.system('python whenToWork/stop.py')
         exit()
     elif p1I == 5:
         print("Work for 45 minutes")
         time.sleep(2700)
-        os.system('python stop.py')
+        os.system('python whenToWork/stop.py')
         exit()
     elif p1I == 6:
         print("Work for 45 minutes")
         time.sleep(2700)
-        os.system('python stop.py')
+        os.system('python whenToWork/stop.py')
         exit()
