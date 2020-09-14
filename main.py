@@ -22,27 +22,27 @@ while True:
     if p1I > 7:
         print("Work for 60 minutes")
         time.sleep(3600)
-        os.system('sh beep.sh')
+        os.system('python stop.py')
         print("Stop")
         exit()
     elif p1I < 3:
         print("Work for 15 minutes")
         time.sleep(900)
-        os.system('sh beep.sh')
+        os.system('python stop.py')
         print("Stop")
         exit()
     elif p1I == 4:
         print("Work for 30 minutes")
         time.sleep(1800)
-        os.system('sh beep.sh')
+        os.system('python stop.py')
         exit()
     elif p1I == 5:
         print("Work for 45 minutes")
         time.sleep(2700)
-        os.system('sh beep.sh')
+        os.system('python stop.py')
         exit()
     elif p1I == 6:
         print("Work for 45 minutes")
         time.sleep(2700)
-        os.system('sh beep.sh')
+        os.system('python stop.py')
         exit()
