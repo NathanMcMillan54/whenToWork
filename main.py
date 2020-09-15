@@ -14,34 +14,34 @@ print(Nf, "working at", COf)
 
 time.sleep(1)
 
-p1 = input("Input project: ")
+project = input("Input project: ")
 print("Input number between 1 and 10")
-p1I = int(input("1 being not important 10 being very important "))
+projectValue = int(input("1 being not important 10 being very important "))
 
 while True:
-    if p1I > 7:
+    if projectValue > 7:
         print("Work for 60 minutes")
         time.sleep(3600)
         os.system('python whenToWork/stop.py')
         print("Stop")
         exit()
-    elif p1I < 3:
+    elif projectValue < 3:
         print("Work for 15 minutes")
         time.sleep(900)
         os.system('python whenToWork/stop.py')
         print("Stop")
         exit()
-    elif p1I == 4:
+    elif projectValue == 4:
         print("Work for 30 minutes")
         time.sleep(1800)
         os.system('python whenToWork/stop.py')
         exit()
-    elif p1I == 5:
+    elif projectValue == 5:
         print("Work for 45 minutes")
         time.sleep(2700)
         os.system('python whenToWork/stop.py')
         exit()
-    elif p1I == 6:
+    elif projectValue == 6:
         print("Work for 45 minutes")
         time.sleep(2700)
         os.system('python whenToWork/stop.py')
