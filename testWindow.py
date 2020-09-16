@@ -19,7 +19,8 @@ def getInput():
 inputBox = Text(root, height=2, width=10)
 inputBox.pack()
 buttonCommit = Button(root, height=1, width=10, text="Enter", command=lambda: getInput())
-# command=lambda: retrieve_input() >>> just means do this when i press the button
+
 buttonCommit.pack()
 
+root.geometry("500x500")
 root.mainloop()
