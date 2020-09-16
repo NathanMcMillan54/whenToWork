@@ -10,18 +10,6 @@ TT.config(font=("Courier", 14))
 TT.pack()
 
 
-# add stuff to make input
-
-def getProjectInput():
-    project = inputProjectBox.get("1.0", "end-1c")
-    print(project)
-
-
-def getProjectValueInput():
-    projectValue = int(inputProjectValueBox.get("1.0", "end-1c"))
-    print(projectValue)
-
-
 def inputText():
     # get input from both input boxes
     projectValue = int(1)
@@ -53,6 +41,18 @@ def inputText():
         time.sleep(2700)
         os.system('python whenToWork/stop.py')
         exit()
+
+
+def getProjectInput():
+    project = inputProjectBox.get("1.0", "end-1c")
+    print(project)
+    inputText()
+
+
+def getProjectValueInput():
+    projectValue = int(inputProjectValueBox.get("1.0", "end-1c"))
+    print(projectValue)
+    inputText()
 
 
 PT = Label(root, text="Project Name")
