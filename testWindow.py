@@ -2,25 +2,43 @@ from tkinter import *
 
 root = Tk()
 root.title("whenToWork")
-root.configure(background="#ffffff")
 
-L = Label(root, text="whenToWork")
-L.config(font=("Courier", 14))
-L.pack()
+TT = Label(root, text="whenToWork")
+TT.config(font=("Courier", 14))
+TT.pack()
 
 
 # add stuff to make input
 
-def getInput():
-    project = inputBox.get("1.0", "end-1c")
+def getProjectInput():
+    project = inputProjectBox.get("1.0", "end-1c")
     print(project)
 
 
-inputBox = Text(root, height=2, width=10)
-inputBox.pack()
-buttonCommit = Button(root, height=1, width=10, text="Enter", command=lambda: getInput())
+def getProjectValueInput():
+    projectValue = inputProjectValueBox.get("1.0", "end-1c")
+    print(projectValue)
 
-buttonCommit.pack()
+
+PT = Label(root, text="Project Name")
+PT.config(font=("Courier", 14))
+PT.pack()
+
+inputProjectBox = Text(root, height=2, width=10)
+inputProjectBox.pack()
+buttonEnterProject = Button(root, height=1, width=10, text="Enter", command=lambda: getProjectInput())
+
+buttonEnterProject.pack()
+
+PVT = Label(root, text="Input 1-10")
+PVT.config(font=("Courier", 14))
+PVT.pack()
+
+inputProjectValueBox = Text(root, height=2, width=10)
+inputProjectValueBox.pack()
+buttonEnterProjectValue = Button(root, height=1, width=10, text="Enter", command=lambda: getProjectValueInput())
+
+buttonEnterProjectValue.pack()
 
 root.geometry("500x500")
 root.mainloop()
