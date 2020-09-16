@@ -13,7 +13,7 @@ Answer all the questions it asks in that file. It also moves files that run when
 #
 From the directory above whenToWork run:
 ```commandline
-sh whenToWork.sh
+sh whenToWork_app.sh
 ```
 
 That runs whenToWork
