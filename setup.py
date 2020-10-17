@@ -11,6 +11,8 @@ COf.read()
 COf.writelines(userName)
 
 print("Setting up shellscript stuff")
-os.system('sh bin/setup.sh')
+os.system('chmod 750 whenToWork.sh')
+os.system('cp whenToWork.sh whenToWork')
+os.system('mv whenToWork ../')
 
 print("Done")
