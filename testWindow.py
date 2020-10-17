@@ -11,10 +11,6 @@ TT.pack()
 
 
 def inputText(projectValue):
-    # python can increase a value about 55000 times
-    # in a second in a while loop
-    i = 0
-
     if projectValue > 6:
         print("Work for 60 minutes")
         while True:
@@ -26,25 +22,24 @@ def inputText(projectValue):
 
     elif projectValue < 4:
         print("Work for 15 minutes")
-        while True:
-            i += 1
-            if 1 == 49500000:
-                os.system('python whenToWork/stop.py')
-                print("Stop")
-                exit()
+        time.sleep(900)
+        os.system('python whenToWork/stop.py')
+        print("Stop")
+        exit()
     elif projectValue == 4:
+        print("Work for 30 minutes")
+        i4 = Label(root, text="Work for 30 minutes")
+        i4.config(font=("Courier", 14))
+        i4.pack()
+        time.sleep(1800)
+        os.system('python whenToWork/stop.py')
+        print("Stop")
+        exit()
+    elif projectValue == 5:
         print("Work for 30 minutes")
         while True:
             i += 1
             if 1 == 99000000:
-                os.system('python whenToWork/stop.py')
-                print("Stop")
-                exit()
-    elif projectValue == 5:
-        print("Work for 45 minutes")
-        while True:
-            i += 1
-            if 1 == 148500000:
                 os.system('python whenToWork/stop.py')
                 print("Stop")
                 exit()
@@ -64,7 +59,27 @@ def enter():
     print(project)
     projectValue = int(inputProjectValueBox.get("1.0", "end-1c"))
     print(projectValue)
-    inputText(projectValue)
+    if projectValue > 6:
+        g6 = Label(root, text="Work for 60 minutes")
+        g6.config(font=("Courier", 14))
+        g6.pack()
+    elif projectValue < 4:
+        l4 = Label(root, text="Work for 15 minutes")
+        l4.config(font=("Courier", 14))
+        l4.pack()
+    elif projectValue == 4:
+        i4 = Label(root, text="Work for 30 minutes")
+        i4.config(font=("Courier", 14))
+        i4.pack()
+    elif projectValue == 5:
+        i5 = Label(root, text="Work for 30 minutes")
+        i5.config(font=("Courier", 14))
+        i5.pack()
+    elif projectValue == 6:
+        i6 = Label(root, text="Work for 45 minutes")
+        i6.config(font=("Courier", 14))
+        i6.pack()
+    # inputText(projectValue)
 
 
 PT = Label(root, text="Project Name")
